@@ -1,0 +1,17 @@
+* Misc. Scripts and Dotfiles
+The is a small folder containing miscellaneous bash scripts and some of my dotfiles.
+
+* Scripts
+- rsync-backup: Backup a select amount of files to an external drive
+- mergeRemote: Merge a remote git repo with my local one when histories don't match
+
+* Dotfiles
+To install, clone and run install.sh
+
+** Contains
+- htop
+- rofi
+- i3
+- vifm
+- zathura
+- polybar
