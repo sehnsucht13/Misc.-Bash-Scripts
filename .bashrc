@@ -72,7 +72,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\λ\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\]\u\[\033[01;37m\] \W\[\033[01;32m\] λ\[\033[00m\] '
+		PS1='\[\033[01;32m\]Явор\[\033[01;37m\] \W\[\033[01;32m\] λ\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
@@ -210,6 +210,7 @@ alias fzm="fzf-bookmarks -m"
 
 # Run bare remacs(no init file)
 alias remacs='RUST_BACKTRACE=1 /home/yavor/pprojects/remacs/src/remacs -q'
+alias mr='cd /home/yavor/pprojects/remacs/ && make -j4'
 alias mc='make clean'
 
 # Override some bash builtins
@@ -221,6 +222,8 @@ alias ff='clear'
 alias h='history'
 alias ll='ls -d .* --color=auto' 
 alias c='python3'
+# Just so I dont ever hand in an empty zip folder for an assignment ever
+alias zipr='zip -r'
 
 if [ -e "$HOME/.sshAliases.sh" ]
 then
