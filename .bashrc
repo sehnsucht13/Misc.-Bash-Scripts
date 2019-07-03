@@ -222,6 +222,8 @@ alias ff='clear'
 alias h='history'
 alias ll='ls -d .* --color=auto' 
 alias c='python3'
+alias em='emacsclient -c -n'
+
 # Just so I dont ever hand in an empty zip folder for an assignment ever
 alias zipr='zip -r'
 
